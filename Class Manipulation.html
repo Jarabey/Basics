@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        font-family:'Courier New', Courier, monospace;
+        margin: 20px;
+        padding: 10px;
+    }
+    .dark-mode{
+        background-color: rgb(37, 37, 37);
+        color: white;
+    }
+</style>
+<body>
+    <button onclick="myFunction()">Dark mode</button>
+</body>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
+</html>
